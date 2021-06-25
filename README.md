@@ -1,38 +1,38 @@
-### Información del repositorio
-En este repositorio encontramos la entrega del seminario 3 de la asignatura SCAV (parte de vídeo).
+### Repository information
+In this repository we find the delivery of the seminar 3 of the Audio and Video Encoding Systems subject (video part).
 
-Para poder utilizarlo correctamente necesitamos el vídeo "Big Buck Bunny", incluído en el repositorio.
+In order to use it correctly we need the video "Big Buck Bunny", included in the repository.
 
-Tenemos 4 archivos .py y en cada de uno de ellos encontramos una explicación detallada sobre cómo utilizarlos:
-
-
-##  **ex1.py**
-Obtenemos el vídeo anterior en 4 nuevos formatos*:
-- Resolución 720p con códec de video vp8.
-- Resolución 480p con códec de video vp9.
-- Resolución 360x240 con códec de video .h265.
-- Resolución 160x120 con códec de video av1.
-
-*Los formatos no son exactamente los definidos ya que he priorizado conservar el aspect ratio. En caso de querer forzarlo se puede utilizar el siguiente código:
-
-`$ ffmpeg -i <input_video> -s 720x480 <output_video>`
+We have 4 .py files and in each of them we find a detailed explanation on how to use them:
 
 
-##  **ex2.py**
-Tras ejecutar el script anterior, gracias a este podemos empaquetar todos los vídeos obtenidos en un único container (4 canales de vídeo y 4 de audio).
+## **ex1.py**
+We get the above video in 4 new formats*:
+- 720p resolution with vp8 video codec.
+- Resolution 480p with video codec vp9.
+- Resolution 360x240 with .h265 video codec.
+- Resolution 160x120 with video codec av1.
+
+*The formats are not exactly the defined ones since I have prioritized to conserve the aspect ratio. In case you want to force it you can use the following code:
+
+`$ ffmpeg -i <input_video> -s 720x480 <output_video>`.
+
+
+## **ex2.py**
+After running the above script, we can pack all the obtained videos into a single container (4 video and 4 audio channels).
 
 <img src="https://drive.google.com/uc?export=view&id=1uOJt5dCAuRYckoc0V5GL0OzgB60ha037" width="600">
 
-A través de un reproductor de vídeo como puede ser VLC podemos cambiar entre los distintos formatos. Podemos observar como, por ejemplo, se ve con mayor calidad el vídeo de 480p con codec vp9 que el de 720p con codec vp8. Esto puede deberse a la compatibilidad entre los códecs y el tipo de contenedor.
+Through a video player such as VLC we can switch between the different formats. We can observe how, for example, 480p video with vp9 codec is seen with higher quality than 720p video with vp8 codec. This may be due to the compatibility between codecs and container type.
 
 
-##  **ex3.py**
-En este script realizamos un steaming en la red local del vídeo generado en el script anterior. Para poder visualizarlo simplemente tenemos que acceder a la url a través de la cual lo compartimos.
+## **ex3.py**
+In this script we perform a steaming in the local network of the video generated in the previous script. In order to view it we simply have to access the url through which we share it.
 
-<img src="https://drive.google.com/uc?export=view&id=1bhuSNG4dfAXGMzM5dHiu7ZUqkKUk0wn1"  width="300" height ="200">     <img src="https://drive.google.com/uc?export=view&id=1Vw9Bos3Ut5B-6EatIxWLux96EKwWx7uj" width="300" height ="200">
+<img src="https://drive.google.com/uc?export=view&id=1bhuSNG4dfAXGMzM5dHiu7ZUqkKUk0wn1" width="300" height ="200"> <img src="https://drive.google.com/uc?export=view&id=1Vw9Bos3Ut5B-6EatIxWLux96EKwWx7uj" width="300" height ="200">
 
 
-##  **ex4.py**
-En este script encontramos un menú que nos permite seleccionar cuál de los scripts anteriores queremos ejecutar.
+## **ex4.py**
+In this script we find a menu that allows us to select which of the above scripts we want to run.
 
-<img src="https://drive.google.com/uc?export=view&id=19B9Q_6w9t7t89fs0w0-kmlUP8ZtRP7O2"  width="300">
+<img src="https://drive.google.com/uc?export=view&id=19B9Q_6w9t7t89fs0w0-kmlUP8ZtRP7O2" width="300">
